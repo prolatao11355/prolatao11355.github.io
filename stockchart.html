@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="utf-8">
+    <title>課題</title>
+    <link rel="stylesheet" href="css/stockchart.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.js"
+        integrity="sha256-8AdWdyRXkrETyAGla9NmgkYVlqw4MOHR6sJJmtFGAYQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"
+        integrity="sha512-mf78KukU/a8rjr7aBRvCa2Vwg/q0tUjJhLtcK53PHEbFwCEqQ5durlzvVTgQgKpv+fyNMT6ZQT1Aq6tpNqf1mg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-streaming@1.8.0/dist/chartjs-plugin-streaming.min.js"
+        integrity="sha256-wqXny6qh3ioeH5yAUB6xPVTJ/EcNaHOR1HvuSZuEFXU=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="modaal">
+        <strong>株価チャートに表示する銘柄を選択してください</strong>
+        <div id="box"></div>
+        <button id="select">選択した銘柄を表示</button>
+    </div>
+    <h1>株価チャート</h1>
+    <a href="#modaal" class="show" id="show-modal">銘柄選択</a>
+    <div class="chart-container">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div id="infor">
+        <strong id="time"></strong>
+        <br>
+        <div id="content"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"
+        integrity="sha256-e8kfivdhut3LQd71YXKqOdkWAG1JKiOs2hqYJTe0uTk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/stockchart.js"></script>
+</body>
+</html>
